@@ -1,8 +1,13 @@
-public class Test {
+public class PrintfExample {
     public static void main(String[] args) {
-        int num1 = Integer.parseInt(args[0]);
-        int num2 = Integer.parseInt(args[1]);
-        int sum = num1 + num2;
-        System.out.println("The sum is: " + sum);
+        String name = "Alice";
+        int age = 25;
+        double score = 89.5;
+
+        // Using printf to format output
+        System.out.printf("Name: %s%n", name);
+        System.out.printf("Age: %d years%n", age);
+        System.out.printf("Score: %.2f%n", score);
+        System.out.printf("Summary: %s is %d years old and scored %.2f points.%n", name, age, score);
     }
 }
